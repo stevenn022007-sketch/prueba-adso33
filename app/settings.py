@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'usuarios',
+    'experiencias',
 ]
 
 AUTH_USER_MODEL = 'usuarios.Usuario' # variable de configuracion de Django para que le indique que modelo debe utilizar para manejar la autentificacion en vez de utilizar el modelo User predeterminado
