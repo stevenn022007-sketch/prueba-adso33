@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'usuarios',
 ]
 
-AUTH_USER_MODEL = 'usuarios.Usuario'
+AUTH_USER_MODEL = 'usuarios.Usuario' # variable de configuracion de Django para que le indique que modelo debe utilizar para manejar la autentificacion en vez de utilizar el modelo User predeterminado
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -105,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.1/topics/i18n/
 
-LANGUAGE_CODE = 'es-co'
+LANGUAGE_CODE = 'es-co' #Cambio de idiomas y zaona horaria
 
 TIME_ZONE = 'America/Bogota'
 
@@ -117,15 +117,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = 'static/' # es el prefijo de la URL que se usara en el navegador para acceder a archivos estaticos
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    BASE_DIR / "static", # Le indica a Django en qué carpetas de tu proyecto debe buscar los archivos estáticos durante el desarrollo
 ]
 
 # Media
-MEDIA_URL = "media/"
-MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_URL = "media/" #Es el prefijo de la URL para acceder a los archivos que los usuarios suben a la plataforma
+MEDIA_ROOT = BASE_DIR / "media" #Es la ruta física en tu disco duro donde se van a guardar permanentemente todos esos archivos que los usuarios vayan subiendo.
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
