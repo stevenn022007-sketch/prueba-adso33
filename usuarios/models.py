@@ -25,3 +25,5 @@ class Usuario(AbstractUser):
     
     
     
+    
+    
